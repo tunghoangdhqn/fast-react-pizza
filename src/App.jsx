@@ -5,6 +5,7 @@ import Cart from "./features/cart/Cart";
 import CreateOrder from "./features/order/CreateOrder";
 import Order from "./features/order/Order";
 
+// use new router to call api while fetching data
 const router = createBrowserRouter([
   {
     path: "/",
