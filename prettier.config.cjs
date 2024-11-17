@@ -11,4 +11,5 @@ module.exports = {
   singleQuote: false,
   jsxSingleQuote: false,
   printWidth: 80,
+  max_line_length: 80
 };

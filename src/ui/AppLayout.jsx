@@ -11,18 +11,17 @@ export default function AppLayout() {
   console.log(navigation);
 
   return (
-    <div className="layout">
+    <div className="grid h-screen grid-rows-[auto_1fr,auto] bg-stone-100">
       {isLoading ? (
         <Loader />
       ) : (
         <>
           <Header />
-
-          <main>
-            <h1>Content</h1>
-            <Outlet />
-          </main>
-
+          <div className="overflow-y-scroll">
+            <main className="mx-auto max-w-3xl">
+              <Outlet />
+            </main>
+          </div>
           <CartOverview />
         </>
       )}
