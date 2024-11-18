@@ -5,7 +5,17 @@ export default {
     fontFamily: {
       sans: "Roboto Mono, monospace"
     },
-    extend: {}
+    extend: {
+      colors: {
+        pizza: "#12345"
+      },
+      fontSize: {
+        huge: ["80rem", { lineHeight: "1" }]
+      },
+      height: {
+        screen: "100dvh"
+      }
+    }
   },
   plugins: []
 };
